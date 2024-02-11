@@ -1,0 +1,297 @@
+.cover {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.cover > h1 {
+  font-family: fantasy;
+}
+
+/* search */
+.search {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search > input {
+  width: 20%;
+  height: 25px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.search > button,
+.search > button {
+  border: none;
+  background-color: #93c6dd;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  width: fit-content;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.search > button:hover,
+.search > button:hover {
+  background-color: #ce3a11;
+}
+
+/* table */
+.table-container {
+  max-height: 300px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: fit-content;
+}
+
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 200px;
+  height: 37px;
+  text-align: center !important;
+}
+
+.input_table_search {
+  border-radius: 10px;
+  padding: 3px;
+  font-size: 16px;
+}
+/* end table */
+
+.no-column {
+  width: 50px !important;
+}
+
+/* btn save */
+.btn-save {
+  border-radius: 4px;
+  background-color: #93c6dd;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn-save span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-save span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-save:hover span {
+  padding-right: 5px;
+}
+
+.btn-save:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn-added {
+  background-color: brown;
+  opacity: 60%;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  pointer-events: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.btn_dialog_close,
+.btn_dialog_save {
+  border: none;
+  background-color: #93c6dd;
+  border-radius: 10px;
+  padding: 5px;
+  width: 70px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.btn_dialog_close:hover,
+.btn_dialog_save:hover {
+  background-color: #ce3a11;
+}
+
+.input_dialog_search {
+  width: 300px;
+  height: 25px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: 1px solid #447288;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* end btn save */
+
+/* button remove */
+.btn-remove {
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn-remove-ani {
+  background-color: white;
+  color: black;
+  border: 2px solid #447288;
+}
+
+.btn-remove-ani:hover {
+  background-color: #447288;
+  color: white;
+}
+
+.btn-row-save {
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn-row-save-ani {
+  background-color: white;
+  color: black;
+  border: 2px solid #447288;
+}
+
+/* end button remove */
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: burlywood;
+  color: white;
+}
+
+.tables-cover {
+  display: flex;
+}
+
+.noted {
+  margin-left: 20px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.noted th {
+  background-color: rgb(69, 114, 136);
+  text-align: center;
+}
+
+/* page number */
+.pagination {
+  display: flex;
+  margin-top: 10px;
+}
+
+.pagination button {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn-active {
+  background-color: burlywood;
+}
+
+/* dialog */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.dialog > p {
+  font-size: 24px;
+  font-family: fantasy;
+}
+
+.dialog > input {
+  margin-bottom: 15px;
+}
+
+.dialog-btn {
+  margin-top: 20px;
+}
+
+.dialog-btn > p {
+  font-family: fantasy;
+  font-size: 20px;
+  color: darkred;
+  margin-bottom: -10px;
+  margin-top: 4px;
+}
+
+.message {
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
